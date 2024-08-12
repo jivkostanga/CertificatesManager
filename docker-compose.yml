@@ -1,0 +1,23 @@
+﻿services:
+  certificates-manager-api:
+    container_name: certificates-manager-api
+    image: certificates-manager-api
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=CertificatesManagerDb;User Id=sa;Password=Password1*;TrustServerCertificate=True;
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=3000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - sqlserver
+    build:
+      context: .
+      dockerfile: CertificatesManager.Api/Dockerfile
+  sqlserver:
+    container_name: sqlserver
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Password1*
+    ports:
+      - "1433:1433"

@@ -1,0 +1,12 @@
+@CertificatesManager.GeneratorApi_HostAddress = http://localhost:5257
+
+POST {{CertificatesManager.GeneratorApi_HostAddress}}/api/CertificatesManager/generate-certificates/
+Accept: application/json
+
+POST {{CertificatesManager.GeneratorApi_HostAddress}}/api/CertificatesManager/get-certificate-by-serial-number/
+Accept: application/json
+
+GET {{CertificatesManager.GeneratorApi_HostAddress}}/api/CertificatesManager/get-certificates/
+Accept: application/json
+
+###

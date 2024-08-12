@@ -1,0 +1,19 @@
+@startuml
+class BaseModel
+{
+    public long Id { get; set; }
+}
+
+class Certificate
+{
+    public string PrivateKey { get; set; }
+
+    public string PublicKey { get; set; }
+
+    public string SerialNumber { get; set; }
+
+    public string? UsedByService { get; set; }
+}
+
+BaseModel <|-- Certificate
+@enduml

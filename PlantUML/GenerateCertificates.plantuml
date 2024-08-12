@@ -1,0 +1,12 @@
+@startuml Generate Certificates
+skinparam Style strictuml
+skinparam SequenceMessageTextAlignment center
+WebUser -> CertificateManagerApi : Generate 3 certificates
+CertificateManagerApi -> CertificateService : GenerateCertificates
+CertificateService -> X509CertificateGenerator : Generate certificate (calls this 3 times)
+X509CertificateGenerator -> CertificateService : Return generated certificate
+CertificateService -> DbContext : Add new certificate
+CertificateService -> DbContext : Commit changes to database
+CertificateService -> CertificateManagerApi : Return list of Serial numbers for new generated certificates
+CertificateManagerApi -> WebUser : Return list of Serial numbers for new generated certificates
+@enduml

@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CertificatesManager.Domain", "CertificatesManager.Domain\CertificatesManager.Domain.csproj", "{567FD8F9-1CE8-47A9-81BF-01731A5F2B7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CertificatesManager.Application", "CertificatesManager.Application\CertificatesManager.Application.csproj", "{65FEAB01-72D5-44B4-833D-DD23AA652D1C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CertificatesManager.Infrastructure", "CertificatesManager.Infrastructure\CertificatesManager.Infrastructure.csproj", "{66326401-2BF7-4580-9A02-FF764457FFF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CertificatesManager.Api", "CertificatesManager.Api\CertificatesManager.Api.csproj", "{F7427D7F-4D7E-4116-AEFE-2434555A00FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CertificatesManager.Common", "CertificatesManager.Common\CertificatesManager.Common.csproj", "{4CD4E739-E636-408C-9751-0BC09D95F02A}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{319D9E29-2EFC-43AE-883D-BB24313E6118}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{EA6A7F84-5BAF-48A4-A7B1-862899DA0CE5}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PlantUML", "PlantUML", "{600DCEF5-E3B2-412C-94F3-6C90C899AD23}"
+	ProjectSection(SolutionItems) = preProject
+		PlantUML\EntitiesClassDiagram.plantuml = PlantUML\EntitiesClassDiagram.plantuml
+		PlantUML\GenerateCertificates.plantuml = PlantUML\GenerateCertificates.plantuml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{521B150A-D9C6-43AA-BD8C-112C2A603750}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CertificatesManager.Domain.Tests", "Tests\CertificatesManager.Domain.Tests\CertificatesManager.Domain.Tests.csproj", "{F0B0C3C8-38EC-4927-BC8C-A91A53C727AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{567FD8F9-1CE8-47A9-81BF-01731A5F2B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567FD8F9-1CE8-47A9-81BF-01731A5F2B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567FD8F9-1CE8-47A9-81BF-01731A5F2B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567FD8F9-1CE8-47A9-81BF-01731A5F2B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FEAB01-72D5-44B4-833D-DD23AA652D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FEAB01-72D5-44B4-833D-DD23AA652D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FEAB01-72D5-44B4-833D-DD23AA652D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FEAB01-72D5-44B4-833D-DD23AA652D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66326401-2BF7-4580-9A02-FF764457FFF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66326401-2BF7-4580-9A02-FF764457FFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66326401-2BF7-4580-9A02-FF764457FFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66326401-2BF7-4580-9A02-FF764457FFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7427D7F-4D7E-4116-AEFE-2434555A00FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7427D7F-4D7E-4116-AEFE-2434555A00FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7427D7F-4D7E-4116-AEFE-2434555A00FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7427D7F-4D7E-4116-AEFE-2434555A00FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CD4E739-E636-408C-9751-0BC09D95F02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD4E739-E636-408C-9751-0BC09D95F02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD4E739-E636-408C-9751-0BC09D95F02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD4E739-E636-408C-9751-0BC09D95F02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{319D9E29-2EFC-43AE-883D-BB24313E6118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319D9E29-2EFC-43AE-883D-BB24313E6118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319D9E29-2EFC-43AE-883D-BB24313E6118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319D9E29-2EFC-43AE-883D-BB24313E6118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0B0C3C8-38EC-4927-BC8C-A91A53C727AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B0C3C8-38EC-4927-BC8C-A91A53C727AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0B0C3C8-38EC-4927-BC8C-A91A53C727AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0B0C3C8-38EC-4927-BC8C-A91A53C727AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{600DCEF5-E3B2-412C-94F3-6C90C899AD23} = {EA6A7F84-5BAF-48A4-A7B1-862899DA0CE5}
+		{F0B0C3C8-38EC-4927-BC8C-A91A53C727AD} = {521B150A-D9C6-43AA-BD8C-112C2A603750}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F4C90E1-141C-4FEF-AA0F-C77F96EB08D3}
+	EndGlobalSection
+EndGlobal
